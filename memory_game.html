@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="memory_game.js"></script>
+    <link rel="stylesheet" type="text/css" href="memory_game.css">
+    <title>Concentration</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Concentration</h1>
+      <!-- Here are click-counter and button to reset game-->
+      <span id="buttons">
+        <span id="clickCounter">0</span>
+        <span id="clickWord">Clicks</span>
+        <button onclick="resetGame()">Reset Game</button>
+        <script>
+        function resetGame() {
+          location.reload();
+        }
+        </script>
+        Stars
+        <span class ="stars" id="oneStar">&#x2605</span>
+        <span class ="stars" id="twoStars">&#x2605</span>
+        <span class ="stars" id="threeStars">&#x2605</span>
+      </span>
+      <!--The grid for the pictures -->
+      <div id="squaresBox">
+        <div class="row" id="row1"></div>
+        <div class="row" id="row2"></div>
+        <div class="row" id="row3"></div>
+        <div class="row" id="row4"></div>
+      </div>
+    </div>
+  </body>
